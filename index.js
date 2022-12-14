@@ -1,3 +1,4 @@
+require("dotenv").config();
 const http = require("http");
 const httpProxy = require("http-proxy");
 
@@ -19,4 +20,4 @@ const server = http.createServer((req, res) => {
 
 console.log("listening on server");
 
-server.listen(process.env.PORT || 80);
+server.listen(process.env.PORT || 10000);
